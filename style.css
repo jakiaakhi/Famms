@@ -1,0 +1,391 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+}
+.logo img{
+    width: 250px;
+}
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.cart-button {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    margin-right: 15px;
+}
+.search-button {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    margin-right: 15px;
+}
+.search-button:hover, .cart-button:hover{
+    color: rgb(243, 11, 11);
+}
+.nav-items ul li{
+    display: inline-block;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+    color: rgb(1, 0, 0);
+}
+nav.navbar-famms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider {
+    background-image: url(/images/slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1096px;
+    
+}
+.carousel .carousel-item h2{
+    padding-top: 200px;
+}
+.carousel-content{
+    max-width: 500px;
+    margin-left: 100px;
+}
+.carousel-content h2{
+   font-size: 80px;
+   font-family: playfiar;
+   font-weight: bold;
+   margin-bottom: 0;
+   padding: 0;
+   color: rgb(239, 37, 37)  
+}
+.carousel-content h3 {
+    font-size: 70px;
+    font-family: playfiar;
+    font-weight: bold;
+    line-height: 36px;
+    color: rgb(5, 5, 5);
+    padding-bottom: 30px;
+}
+.carousel-content button{
+    width: 180px;
+    height: 45px;
+    color: #ffffff;
+    background-color: rgb(235, 18, 18); 
+}
+.carousel {
+    position: relative;
+}
+.famm-carousel-control-prev {
+    background-color: red;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    z-index: 5000;
+}
+.famm-carousel-control-next {
+    background-color: red;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: -150px;
+    z-index: 5000;
+}
+.slider .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 0;
+    margin-left: 8%;
+    list-style: none;
+}
+.shop{
+    width: 100%;
+    height: 500px;
+    background: rgb(242, 239, 239);
+}
+.shop h3 {
+    padding: 10px 0;
+}
+.shop h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+.stimuli-card {
+    text-align: center;
+    background-color: #002c3e;
+    padding: 45px 50px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.shop .container {
+    padding: 0 60px;
+}
+.icon-holder span {
+    font-size: 50px;
+}
+img{
+    max-width: 100%;
+}
+.newarrival h2{
+    padding-top: 130px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: playfiar;
+}
+.newarrival{
+    width: 100%;
+    height: 450px;
+    background: rgb(212 206 208);
+    overflow: hidden;
+}
+.happy-person{
+    margin-top: 0;
+    max-width: 150%;
+}
+.ourproduct {
+    width: 100%;
+    margin: 70px 0;
+    height: auto;
+}
+.single-product-card {
+    background: rgb(250, 247, 247);
+    border-right: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    box-shadow: 0px 0px 10px 0 rgb(212, 210, 210);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.product-image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-floating-buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    transition: bottom 0.3s;
+    height: 100%;
+    /* background-color: #dddddd73; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.more-product-btn {
+    background-color:red;
+    color: #FFF;
+    margin-bottom: 20px;
+    width: 215px;
+    height: 45px;
+}
+.buy-now-btn {
+    background-color: #002c3e;
+    width: 150px;
+    color: #FFF;
+}
+.addtocart-btn:hover, .buy-now-btn:hover {
+    color: #fff;
+}
+.single-product-card:hover .product-floating-buttons {
+    bottom: 0;
+}
+.product-image img {
+    width: 140px;
+}
+.ourproduct h2 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(199, 61, 61);
+    margin-bottom: 100px;
+    position: relative;
+}
+.our-word {
+    color:rgb(1, 0, 0)
+}
+.ourproduct h2::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #dc3545;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.underline {
+    width: 90px;
+    height: 4px;
+    background: rgb(211 71 36);
+    margin: 0 auto 50px;
+}
+.customer .carousel-item img {
+    width: 140px !important;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 50px;
+}
+.discount{
+    width: 100%;
+    height: 400px;
+    background-color: darkgray;
+    text-align: center;
+}
+.discount h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.subcrive-guide{
+    font-size: 18px;
+}
+.enter-email-btn {
+    background-color: #fff;
+    width: 65%;
+    height: 56px;
+    border-radius: 30px;
+    margin: 20px 0 40px;
+    padding-left: 15px;
+    border: 0;
+    outline: 0;
+    
+}
+.shop-now-btn {
+    width: 278px;
+    background-color: red;
+    height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.btn.subcribe-btn {
+    width: 278px;
+    background-color: red;
+    height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 45px;
+}
+.customer{
+    text-align: center;
+    margin: 80px 0;
+}
+.footer {
+    width: 100%;
+    height: 400px;
+    background: rgb(244, 241, 241);
+    padding-top: 80px;
+}
+.footer .logo{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li{
+    margin-top: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#subcribe-form {
+    display: flex;
+    height: 40px;
+}
+.subcriber-email {
+    background-color: #fff;
+    height: 100%;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+.footer-subcribe-btn {
+    background-color: red;
+    color: #fff;
+    border-radius: 0;
+}
+.more-product{
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    width: 100%;
+    height: 60px;
+    background: rgb(1, 1, 1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-text{
+    color: red;
+}
